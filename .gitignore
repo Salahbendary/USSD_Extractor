@@ -1,0 +1,20 @@
+# Secrets
+.env
+
+# Generated data
+kpi_results.csv
+uploads/
+
+# PaddleOCR offline models (too large for git)
+paddle_models/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,40 @@
+# ── Python ──────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual environments ─────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Local data (not needed in container) ────────────
+uploads/
+kpi_results.csv
+paddle_models/
+*.csv
+
+# ── Secrets (never bake into image) ─────────────────
+.env
+
+# ── Dev/test files ───────────────────────────────────
+*.test.py
+batch_run.py
+run_chunk.py
+.pytest_cache/
+
+# ── Git ──────────────────────────────────────────────
+.git/
+.gitignore
+
+# ── IDE ──────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
