@@ -1,0 +1,43 @@
+# ─────────────────────────────────────────────────────────────
+# USSD KPI Extractor Web App  —  Python Requirements
+# ─────────────────────────────────────────────────────────────
+#
+# Install:
+#   pip install -r requirements.txt
+#
+# ─────────────────────────────────────────────────────────────
+
+# ── Web framework ──────────────────────────────────────────
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9     # required for file uploads in FastAPI
+
+# ── GitHub integration ─────────────────────────────────────
+PyGithub>=2.3.0
+
+# ── Environment variables ──────────────────────────────────
+python-dotenv>=1.0.0
+
+# ── OCR: PaddleOCR (primary) ──────────────────────────────
+paddlepaddle>=2.6.1          # CPU wheel  (use paddlepaddle-gpu for GPU)
+paddleocr>=2.7.3
+
+# ── OCR: Tesseract (automatic fallback) ───────────────────
+pytesseract>=0.3.10
+
+# ── Image processing ──────────────────────────────────────
+opencv-python-headless>=4.8.0
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# ── Data handling ─────────────────────────────────────────
+pandas>=2.0.0
+
+# ─────────────────────────────────────────────────────────────
+# System dependency (Tesseract binary):
+#
+#   Ubuntu/Debian:   sudo apt install tesseract-ocr
+#   macOS:           brew install tesseract
+#   Windows:         choco install tesseract
+#            OR download from: https://github.com/UB-Mannheim/tesseract/wiki
+# ─────────────────────────────────────────────────────────────
